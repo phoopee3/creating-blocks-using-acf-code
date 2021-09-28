@@ -7,17 +7,17 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
         <div class="split-image-title">
             <?php echo $acf_fields['title']; ?>
         </div>
-        <?php if ( isset( $acf_fields['subtitle'] ) ) { ?>
+        <?php if ( $acf_fields['subtitle'] ) { ?>
             <div class="split-image-subtitle">
                 <?php echo $acf_fields['subtitle']; ?>
             </div>
         <?php } ?>
-        <?php if ( isset( $acf_fields['content'] ) ) { ?>
+        <?php if ( $acf_fields['content'] ) { ?>
             <div class="split-image-content">
                 <?php echo $acf_fields['content']; ?>
             </div>
         <?php } ?>
-        <?php if ( isset( $acf_fields['button_text'] ) ) { ?>
+        <?php if ( $acf_fields['button_text'] ) { ?>
             <div class="split-image-button">
                 <a href="<?php echo $acf_fields['button_link']; ?>">
                     <?php echo $acf_fields['button_text']; ?>
